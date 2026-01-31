@@ -9,9 +9,9 @@
     <!-- <link rel="stylesheet" href="./input.css"> -->
 </head>
 
-<body class="leading-8">
+<body class="leading-8 bg-[#0F172A] text-slate-100">
 
-    <nav id="navbar" class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+    <nav id="navbar" class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-6 flex items-center justify-between z-50">
 
         <a href="#!">
             <h1 class="text-3xl sm:text-2xl font-semibold">
@@ -21,7 +21,7 @@
         </a>
 
         <ul id="navLink"
-            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 border border-gray-400  ">
+            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-[#0F172A] shadow-sm bg-opacity-50 border border-gray-400  ">
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#top">Home</a></li>
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#about">About me</a></li>
             <li><a class='hover:text-gray-500 dark:hover:text-gray-300 transition' href="#services">Services</a></li>
@@ -43,18 +43,18 @@
             </a>
 
             <button class="block md:hidden ml-3" onclick="openMenu()">
-                <img src="./assets/menu-black.png" alt="" class="w-6 dark:hidden" />
-                <!-- <img src="./assets/menu-white.png" alt="" class="w-6 hidden dark:block" /> -->
+                <!-- <img src="./assets/menu-black.png" alt="" class="w-6 dark:hidden" /> -->
+                <img src="./assets/menu-white.png" alt="" class="w-6" />
             </button>
 
         </div>
         <!-- ----- mobile menu ------ -->
         <ul id="mobileMenu"
-            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
+            class="flex bg-[#0F172A] md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen transition duration-500">
 
             <div class="absolute right-6 top-6" onclick="closeMenu()">
-                <img src="./assets/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden" />
-                <!-- <img src="./assets/close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block" /> -->
+                <!-- <img src="./assets/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden" /> -->
+                <img src="./assets/close-white.png" alt="" class="w-5 cursor-pointer" />
             </div>
 
             <li><a href="#top" onclick="closeMenu()">Home</a></li>
@@ -66,7 +66,7 @@
     </nav>
 
     <!-- ----- home section ------ -->
-    <section class="w-11/12 max-w-3xl text-center mx-auto pt-20 md:pt-28 flex flex-col items-center justify-center gap-4">
+    <section class=" min-h-screen w-11/12 max-w-3xl text-center mx-auto pt-20 md:pt-28 flex flex-col items-center justify-center gap-4">
         <img src="./assets/gorakh_photo.png" alt="" class="rounded-full w-32" />
         <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">
             Hi! I'm Gorakh Kumar 👋
@@ -86,8 +86,9 @@
             </a>
 
             <a href="./assets/dev-icon.png" download
-                class="px-10 py-2.5 rounded-full border border-gray-300 hover:bg-slate-100/70 flex items-center gap-2 bg-white">
-                my resume <img src="./assets/download-icon.png" alt="" class="w-4" />
+                class="px-10 py-2.5 rounded-full border border-gray-300 hover:bg-slate-100/70 flex items-center gap-2 bg-[#0F172A]">
+                my resume 
+                <img src="./assets/dar" alt="" class="w-4" />
             </a>
         </div>
     </section>
@@ -113,8 +114,7 @@
                     Right now, I’m looking for a place where I can keep learning, improve my skills, and grow as a
                     developer.</p>
                 <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-                    <li
-                        class="border border-gray-300 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                    <li class="border border-gray-300 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
                         <img src="./assets/code-icon.png" alt="" class="w-7 mt-3 dark:hidden"> 
                         <!-- <img src="./assets/code-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block"> -->
                            
@@ -122,12 +122,11 @@
                         <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, Tailwind CSS,
                             Bootstrap, React Js</p>
                     </li>
-                    <li
-                        class="border border-gray-300 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
+                    <li class="border border-gray-300 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black">
                         <img src="./assets/edu-icon.png" alt="" class="w-7 mt-3 dark:hidden"><img
                             src="./assets/edu-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
                         <h3 class="my-4 font-semibold text-gray-700">Education</h3>
-                        <p class="text-gray-600 text-sm/80">Diploma in Computer Science & Engineering
+                        <p class="text-gray-600 text-sm">Diploma in Computer Science & Engineering
                         </p>
                     </li>
                     <li
@@ -135,10 +134,10 @@
                         <img src="./assets/project-icon.png" alt="" class="w-7 mt-3 dark:hidden"><img
                             src="./assets/project-icon-dark.png" alt="" class="w-7 mt-3 hidden dark:block">
                         <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
-                        <p class="text-gray-600 text-sm/80">Built more than 5 projects</p>
+                        <p class="text-gray-600 text-sm">Built more than 5 projects</p>
                     </li>
                 </ul>
-                <h4 class="my-6 text-gray-700/80">Tools i use</h4>
+                <h4 class="my-6 text-slate-100">Tools i use</h4>
                 <ul class="flex items-center gap-3 sm:gap-5">
                     <li
                         class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
