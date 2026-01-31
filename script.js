@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
         navbar.classList.add('bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm',);
         navLink.classList.remove('bg-[#0F172A]', 'shadow-sm', 'bg-opacity-50');
     } else {
-        navbar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+        navbar.classList.remove('bg-[#0F172A]', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
         navLink.classList.add('bg-[#0F172A]', 'shadow-sm', 'bg-opacity-50');
     }
 })
